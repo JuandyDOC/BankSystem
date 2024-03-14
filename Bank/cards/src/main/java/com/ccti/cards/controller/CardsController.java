@@ -8,7 +8,6 @@ import com.ccti.cards.dto.ResponseDto;
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotNull;
-import lombok.AllArgsConstructor;
 import lombok.RequiredArgsConstructor;
 
 import org.springframework.http.HttpStatus;
