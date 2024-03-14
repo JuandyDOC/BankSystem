@@ -1,0 +1,40 @@
+services:
+  account:
+    image: "jdhoyospadilla/bank-accounts:pre-release"
+    container_name: accounts_api
+    ports:
+      - "8080:8080"
+    deploy:
+      resources:
+        limits:
+          memory: 500m
+          cpus: "2"
+    networks:
+      - bank_net
+  loans:
+    image: "jdhoyospadilla/bank-loans:pre-release"
+    container_name: loans_api
+    ports:
+      - "8090:8090"
+    deploy:
+      resources:
+        limits:
+          memory: 500m
+          cpus: "2"
+    networks:
+      - bank_net
+  cards:
+    image: "jdhoyospadilla/bank-cards:pre-release"
+    container_name: cards_api
+    ports:
+      - "9000:9000"
+    deploy:
+      resources:
+        limits:
+          memory: 500m
+          cpus: "2"
+    networks:
+      - bank_net
+networks:
+    bank_net:
+      driver: "bridge"

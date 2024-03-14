@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: "configserver"
+  profiles:
+    active: git
+    #active: native
+  cloud:
+    config:
+      server:
+        git:
+          uri: # ruta repositorio GITHUB
+          default-label: main
+          timeout: 5
+          clone-on-start: true
+        #native:
+          #search-locations: "classpath:/config"
+          #search-locations: "file:///C:/Users/ASUS/Downloads/MicroServicios Spring Boot/spring-config/config"
+server:
+  port: 8071

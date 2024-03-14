@@ -1,0 +1,11 @@
+build:
+  version: "v2.0"
+
+contact:
+  message: "Bank System - Account API"
+  details:
+    name: "Kevyn Evadido - Tester Lead"
+    email: "hoyosjd@globalhitss.com"
+  phone-numbers:
+    -(57) 311-494-7050
+    -(57) 300-245-0123
